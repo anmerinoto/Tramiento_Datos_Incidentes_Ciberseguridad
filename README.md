@@ -7,7 +7,7 @@ El propósito de este dataset es servir como base para el análisis de tendencia
 
 ---
 
-🔹 1. 🔧 Limpieza y transformación de los datos  
+## 🔧 Limpieza y transformación de los datos  
 Para preparar el dataset se realizaron los siguientes pasos:  
 
 1.  
@@ -17,7 +17,7 @@ Para preparar el dataset se realizaron los siguientes pasos:
 
 ---
 
-🔹 2. Procesamiento de Datos
+## 🔧 Procesamiento de Datos  
 Se aplicaron los siguientes pasos de preparación:
 
 Limpieza inicial
@@ -33,14 +33,14 @@ Creación de nuevas features:
 
 ---
 
-🔹 3. 📊 Principales hallazgos del análisis  
+## 📊 Principales hallazgos del análisis  
 - Se identificaron los **tipos de incidentes de ciberseguridad más recurrentes**, tales como accesos no autorizados, fugas de datos y ataques de ransomware.  
 - Algunos **sectores presentan mayor vulnerabilidad** frente a ataques específicos, lo que sugiere la necesidad de medidas preventivas particulares.  
 - Se observan **tendencias temporales**, con incrementos notables de ciertos incidentes en periodos concretos.  
 
 ---
 
-🔹 4. Visualizaciones
+## 📊 Visualizaciones
 Se generaron las siguientes visualizaciones:
   - Histogramas → .
   - Boxplots → .
@@ -50,14 +50,14 @@ Se generaron las siguientes visualizaciones:
 
 ---
 
-🔹 5. 💡 Insights y conclusiones  
+## 💡 Insights y conclusiones  
 - La **distribución de incidentes por tipo** evidencia que la mayor parte se concentra en un número reducido de categorías, lo cual permite priorizar medidas de mitigación en esos ámbitos.  
 - Los datos muestran que la **conciencia en ciberseguridad y las políticas de protección** juegan un papel clave en la reducción de riesgos.  
 - Este análisis puede ser un punto de partida para diseñar **modelos predictivos** que anticipen posibles incidentes en función de patrones históricos.  
 
 ---
 
-🔹 7. Equipo de Trabajo
+## 💡 Equipo de Trabajo
 Integrantes:
 * Jenny Alava
 * Saskya Guerrero
@@ -65,7 +65,7 @@ Integrantes:
 
 ---
 
-🔹 8. Repositorio
+## 💡 Repositorio
 Este repositorio contiene:
 - data/ → dataset original (o enlace a Kaggle).
 - notebooks/ → análisis exploratorio y visualizaciones.
