@@ -21,14 +21,13 @@ Para preparar el dataset se realizaron los siguientes pasos:
 Se aplicaron los siguientes pasos de preparación:
 
 Limpieza inicial
-
-Eliminación de registros duplicados.  
-Verificación de valores nulos (no se encontraron).  
-Transformación  
+  Eliminación de registros duplicados.  
+  Verificación de valores nulos (no se encontraron).  
+  Transformación  
 
 Conversión de variables categóricas a formato numérico.  
-Normalización de variables.  
-Adaptación
+  Normalización de variables.  
+  Adaptación
 
 Creación de nuevas features:
 
