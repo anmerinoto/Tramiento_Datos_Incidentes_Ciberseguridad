@@ -72,7 +72,7 @@ El análisis permite identificar patrones de riesgo y priorizar medidas de ciber
 ## 💡 Equipo de Trabajo
 Integrantes:
 * Jenny Alava
-* Saskya Guerrero
+* Saskia Guerrero
 * Angel Merino
 
 ---
