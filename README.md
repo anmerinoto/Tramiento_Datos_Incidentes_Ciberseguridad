@@ -1,29 +1,4 @@
-# Tramiento Datos Incidentes Ciberseguridad
-Muestra el número de reportes de incidentes de ciberseguridad presentados ante autoridades locales.
-
-Incluye datos sobre el estimado de pérdidas económicas, calculadas en dólares estadounidenses (USD).
-
-Además, algunos campos de datos faltantes han sido completados mediante imputación para mantener la integridad del conjunto. 
-
-¿Qué tipo de análisis permite realizar?
-
-Este dataset es excelente para practicar tareas de tratamiento de datos y análisis exploratorio, por ejemplo:
-
-EDA (Análisis Exploratorio de Datos): analizar distribución de número de incidentes por año o región, y calcular estadísticas resumen de pérdidas.
-
-Tratamiento de datos faltantes: examinar cómo se imputaron valores y evaluar opciones alternativas (por ejemplo, imputación media, mediana u otro enfoque).
-
-Análisis de tendencias: ver cómo han cambiado los incidentes y pérdidas a lo largo del tiempo o por jurisdicción.
-
-Modelado predictivo básico: si se incluyen variables temporales o geográficas, podrías entrenar modelos para predecir pérdidas futuras o frecuencia de incidentes.
-
-Resumen rápido
-Pregunta	Respuesta
-¿Qué contiene?	Número de reportes de incidentes, estimado de pérdidas (USD), datos imputados.
-¿Cuál es su propósito?	Permitir análisis e investigación sobre incidentes de ciberseguridad y su impacto económico.
-¿Es útil para tu tarea de tratamiento de datos?	Sí; es ideal para demostrar limpieza, manejo de valores faltantes, visualizaciones y análisis de tendencias.
-
-# Proyecto de Análisis de Incidentes de Ciberseguridad  
+# 🛡️ Proyecto de Análisis de Incidentes de Ciberseguridad  
 
 ## 📌 Descripción del propósito del dataset  
 El presente proyecto utiliza el dataset **Cybersecurity Incidents Dataset** (disponible en [Kaggle](https://www.kaggle.com/datasets/huzpsb/cybersecurity-incidents-dataset)), el cual recopila información relacionada con incidentes de ciberseguridad registrados en diferentes organizaciones.  
@@ -42,10 +17,36 @@ Para preparar el dataset se realizaron los siguientes pasos:
 
 ---
 
+## 🔧 Procesamiento de Datos  
+Se aplicaron los siguientes pasos de preparación:
+
+Limpieza inicial
+  Eliminación de registros duplicados.  
+  Verificación de valores nulos (no se encontraron).  
+  Transformación  
+
+Conversión de variables categóricas a formato numérico.  
+  Normalización de variables.  
+  Adaptación
+
+Creación de nuevas features:
+
+---
+
 ## 📊 Principales hallazgos del análisis  
 - Se identificaron los **tipos de incidentes de ciberseguridad más recurrentes**, tales como accesos no autorizados, fugas de datos y ataques de ransomware.  
 - Algunos **sectores presentan mayor vulnerabilidad** frente a ataques específicos, lo que sugiere la necesidad de medidas preventivas particulares.  
 - Se observan **tendencias temporales**, con incrementos notables de ciertos incidentes en periodos concretos.  
+
+---
+
+## 📊 Visualizaciones
+Se generaron las siguientes visualizaciones:
+  - Histogramas → .
+  - Boxplots → .
+  - Heatmap de correlación (Seaborn) → .
+  - Gráfico de barras → .
+📌 Ejemplo de hallazgo gráfico:
 
 ---
 
@@ -54,3 +55,19 @@ Para preparar el dataset se realizaron los siguientes pasos:
 - Los datos muestran que la **conciencia en ciberseguridad y las políticas de protección** juegan un papel clave en la reducción de riesgos.  
 - Este análisis puede ser un punto de partida para diseñar **modelos predictivos** que anticipen posibles incidentes en función de patrones históricos.  
 
+---
+
+## 💡 Equipo de Trabajo
+Integrantes:
+* Jenny Alava
+* Saskya Guerrero
+* Angel Merino
+
+---
+
+## 💡 Repositorio
+Este repositorio contiene:
+- data/ → dataset original (o enlace a Kaggle).
+- notebooks/ → análisis exploratorio y visualizaciones.
+- src/ → scripts de limpieza y preprocesamiento.
+- README.md → documentación del proyecto.
