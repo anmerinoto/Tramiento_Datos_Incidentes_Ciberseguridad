@@ -7,7 +7,7 @@ El propósito de este dataset es servir como base para el análisis de tendencia
 
 ---
 
-## 🔧 Limpieza y transformación de los datos  
+🔹 1. 🔧 Limpieza y transformación de los datos  
 Para preparar el dataset se realizaron los siguientes pasos:  
 
 1.  
@@ -17,15 +17,58 @@ Para preparar el dataset se realizaron los siguientes pasos:
 
 ---
 
-## 📊 Principales hallazgos del análisis  
+🔹 2. Procesamiento de Datos
+Se aplicaron los siguientes pasos de preparación:
+
+Limpieza inicial
+
+Eliminación de registros duplicados.  
+Verificación de valores nulos (no se encontraron).  
+Transformación  
+
+Conversión de variables categóricas a formato numérico.  
+Normalización de variables.  
+Adaptación
+
+Creación de nuevas features:
+
+---
+
+🔹 3. 📊 Principales hallazgos del análisis  
 - Se identificaron los **tipos de incidentes de ciberseguridad más recurrentes**, tales como accesos no autorizados, fugas de datos y ataques de ransomware.  
 - Algunos **sectores presentan mayor vulnerabilidad** frente a ataques específicos, lo que sugiere la necesidad de medidas preventivas particulares.  
 - Se observan **tendencias temporales**, con incrementos notables de ciertos incidentes en periodos concretos.  
 
 ---
 
-## 💡 Insights y conclusiones  
+🔹 4. Visualizaciones
+Se generaron las siguientes visualizaciones:
+  - Histogramas → .
+  - Boxplots → .
+  - Heatmap de correlación (Seaborn) → .
+  - Gráfico de barras → .
+📌 Ejemplo de hallazgo gráfico:
+
+---
+
+🔹 5. 💡 Insights y conclusiones  
 - La **distribución de incidentes por tipo** evidencia que la mayor parte se concentra en un número reducido de categorías, lo cual permite priorizar medidas de mitigación en esos ámbitos.  
 - Los datos muestran que la **conciencia en ciberseguridad y las políticas de protección** juegan un papel clave en la reducción de riesgos.  
 - Este análisis puede ser un punto de partida para diseñar **modelos predictivos** que anticipen posibles incidentes en función de patrones históricos.  
 
+---
+
+🔹 7. Equipo de Trabajo
+Integrantes:
+* Jenny Alava
+* Saskya Guerrero
+* Angel Merino
+
+---
+
+🔹 8. Repositorio
+Este repositorio contiene:
+- data/ → dataset original (o enlace a Kaggle).
+- notebooks/ → análisis exploratorio y visualizaciones.
+- src/ → scripts de limpieza y preprocesamiento.
+- README.md → documentación del proyecto.
