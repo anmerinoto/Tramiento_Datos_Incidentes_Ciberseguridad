@@ -1,4 +1,4 @@
-# Tramiento_Datos_Incidentes_Ciberseguridad
+# Tramiento Datos Incidentes Ciberseguridad
 Muestra el número de reportes de incidentes de ciberseguridad presentados ante autoridades locales.
 
 Incluye datos sobre el estimado de pérdidas económicas, calculadas en dólares estadounidenses (USD).
