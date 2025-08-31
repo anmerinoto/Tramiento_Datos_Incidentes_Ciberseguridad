@@ -74,8 +74,9 @@ El análisis permite identificar patrones de riesgo y priorizar medidas de ciber
    ![Bubble Chart: Año vs Pérdidas (size=Quejas, color=Pais)](images/bubble_year_losses.png)
 
 ### 📊 Graficos Animados
-* !<a href="https://rawcdn.githack.com/anmerinoto/Tramiento_Datos_Incidentes_Ciberseguridad/0771bb7f2ddde5caf8a872883d0ed0980382e355/interactive_scatter_complaints_losses.html" target="_blank" rel="noopener noreferrer">Quejas vs Pérdidas (2019–2024) – animación por año</a>
-* !<a href="https://rawcdn.githack.com/anmerinoto/Tramiento_Datos_Incidentes_Ciberseguridad/33ed7b3e206422753d61405d1e1a9235fa5d5980/interactive_bubble_year_losses.html" target="_blank" rel="noopener noreferrer">Bubble Chart: Año vs Pérdidas (size=Quejas, color=Pais)</a>
+* ![<a href="https://rawcdn.githack.com/anmerinoto/Tramiento_Datos_Incidentes_Ciberseguridad/0771bb7f2ddde5caf8a872883d0ed0980382e355/interactive_scatter_complaints_losses.html" target="_blank" rel="noopener noreferrer">Quejas vs Pérdidas (2019–2024) – animación por año</a>]
+* ![<a href="https://rawcdn.githack.com/anmerinoto/Tramiento_Datos_Incidentes_Ciberseguridad/33ed7b3e206422753d61405d1e1a9235fa5d5980/interactive_bubble_year_losses.html" target="_blank" rel="noopener noreferrer">Bubble Chart: Año vs Pérdidas (size=Quejas, color=Pais)</a>]
+
   - Gráfico de barras → .
 
 ---
