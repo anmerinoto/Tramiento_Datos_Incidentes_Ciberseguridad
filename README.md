@@ -1,12 +1,12 @@
 # 📊 Tratamiento de Datos de Incidentes de Ciberseguridad
 *Maestría en Ciberseguridad – Grupo 11*
+Este repositorio contiene el análisis y visualización de incidentes de ciberseguridad utilizando Python (**Pandas**, **Matplotlib** y **Plotly**). El objetivo es explorar y mostrar la relación entre **quejas** y **pérdidas económicas** a nivel global en el período **2019–2024**.
+
 ## 💡 Equipo de Trabajo
 Integrantes:
 * Jenny Alava
 * Saskia Guerrero
 * Angel Merino
-
-Este repositorio contiene el análisis y visualización de incidentes de ciberseguridad utilizando Python (**Pandas**, **Matplotlib** y **Plotly**). El objetivo es explorar y mostrar la relación entre **quejas** y **pérdidas económicas** a nivel global en el período **2019–2024**.
 
 ## 📂 Estructura del Repositorio
 - **`incidentes_ciberseguridad.ipynb`** → Notebook principal con procesamiento, análisis y visualización.
@@ -100,12 +100,3 @@ El análisis permite identificar patrones de riesgo y priorizar medidas de ciber
 - La **distribución de incidentes por tipo** evidencia que la mayor parte se concentra en un número reducido de categorías, lo cual permite priorizar medidas de mitigación en esos ámbitos.  
 - Los datos muestran que la **conciencia en ciberseguridad y las políticas de protección** juegan un papel clave en la reducción de riesgos.  
 - Este análisis puede ser un punto de partida para diseñar **modelos predictivos** que anticipen posibles incidentes en función de patrones históricos.  
-
----
-
-## 💡 Repositorio
-Este repositorio contiene:
-- data/ → dataset original.
-- images/ → visualizaciones.
-- root → análisis exploratorio, notebook y procesamiento.
-- README.md → documentación del proyecto.
