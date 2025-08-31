@@ -52,8 +52,6 @@ Este comportamiento refleja la concentración de ciberataques en economías alta
 El análisis permite identificar patrones de riesgo y priorizar medidas de ciberseguridad a nivel internacional.  
 
 ![Evolución de Pérdidas por País](images/grafico_lineas_pais.png)
-
-
   - Histogramas → .
   - Boxplots → .
   - Heatmap de correlación (Seaborn) → .
@@ -79,7 +77,7 @@ Integrantes:
 
 ## 💡 Repositorio
 Este repositorio contiene:
-- data/ → dataset original (o enlace a Kaggle).
-- notebooks/ → análisis exploratorio y visualizaciones.
-- src/ → scripts de limpieza y preprocesamiento.
+- data/ → dataset original.
+- images/ → visualizaciones.
+- root → análisis exploratorio, notebook y procesamiento.
 - README.md → documentación del proyecto.
