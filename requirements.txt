@@ -1,0 +1,21 @@
+# --- Librerías base de tratamiento de datos ---
+pandas==2.2.2
+numpy==1.26.4
+
+# --- Visualización ---
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# --- Machine Learning / Modelado ---
+scikit-learn==1.5.2
+
+# --- Manejo de notebooks ---
+jupyter==1.1.1
+ipykernel==6.29.5
+
+# --- Texto y NLP (opcional, por si analizas incidentes en logs/textos) ---
+nltk==3.9.1
+gensim==4.3.3
+
+# --- Guardado de modelos y utilidades ---
+joblib==1.4.2
