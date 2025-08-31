@@ -52,13 +52,32 @@ Este comportamiento refleja la concentración de ciberataques en economías alta
 El análisis permite identificar patrones de riesgo y priorizar medidas de ciberseguridad a nivel internacional.  
 
 ![Evolución de Pérdidas por País](images/grafico_lineas_pais.png)
-
-
   - Histogramas → .
   - Boxplots → .
-  - Heatmap de correlación (Seaborn) → .
-  - Gráfico de barras → .
-📌 Ejemplo de hallazgo gráfico:
+
+## **📊 Heatmap de correlación (Seaborn)**.
+### **📌Quejas vs Pérdidas (2019–2024) por año**
+  >Te permite ver si los países con más quejas también presentan más pérdidas, comparando entre años.
+  Crea un scatterplot donde:    
+   - Eje X = número de quejas.  
+   - Eje Y = pérdidas económicas (USD).  
+   - Cada color representa un año distinto (2019–2024).  
+   ![Quejas vs Pérdidas (2019–2024)](images/scatter_complaints_losses.png)
+
+### **📌Bubble Chart: Año vs Pérdidas (size=Quejas, color=Pais)**
+  >Esto te deja ver qué países tienen más pérdidas en cada año y con cuántas quejas se relaciona.  
+   Crea un gráfico de burbujas donde:  
+   - Eje X = Año.  
+   - Eje Y = Pérdidas (USD).  
+   - Tamaño de la burbuja = número de quejas.  
+   - Color = país.  
+   ![Bubble Chart: Año vs Pérdidas (size=Quejas, color=Pais)](images/bubble_year_losses.png)
+
+### 📌Graficos Animados
+* <a href="https://rawcdn.githack.com/anmerinoto/Tramiento_Datos_Incidentes_Ciberseguridad/0771bb7f2ddde5caf8a872883d0ed0980382e355/interactive_scatter_complaints_losses.html" target="_blank" rel="noopener noreferrer">Quejas vs Pérdidas (2019–2024) – animación por año</a>
+* <a href="https://rawcdn.githack.com/anmerinoto/Tramiento_Datos_Incidentes_Ciberseguridad/33ed7b3e206422753d61405d1e1a9235fa5d5980/interactive_bubble_year_losses.html" target="_blank" rel="noopener noreferrer">Bubble Chart: Año vs Pérdidas (size=Quejas, color=Pais)</a>
+
+### Gráfico de barras → .
 
 ---
 
@@ -79,7 +98,7 @@ Integrantes:
 
 ## 💡 Repositorio
 Este repositorio contiene:
-- data/ → dataset original (o enlace a Kaggle).
-- notebooks/ → análisis exploratorio y visualizaciones.
-- src/ → scripts de limpieza y preprocesamiento.
+- data/ → dataset original.
+- images/ → visualizaciones.
+- root → análisis exploratorio, notebook y procesamiento.
 - README.md → documentación del proyecto.
