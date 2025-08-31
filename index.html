@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portafolio · Incidentes de Ciberseguridad (2019–2024)</title>
+  <style>
+    :root { --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#94a3b8; --accent:#22c55e; }
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,sans-serif;background:linear-gradient(180deg,#0b1220,#0f172a);}
+    a{color:inherit}
+    header{padding:2rem 1rem;text-align:center;color:var(--text)}
+    nav{display:flex;gap:.75rem;justify-content:center;margin:.25rem 0 1rem}
+    nav a{font-weight:600;color:var(--muted);text-decoration:none;border:1px solid rgba(255,255,255,.12);padding:.4rem .7rem;border-radius:999px}
+    nav a:hover{border-color:var(--accent)}
+    h1{margin:.25rem 0 0;font-size:clamp(1.4rem,2.8vw,2rem)}
+    p.lead{margin:.5rem auto 0;max-width:900px;color:var(--muted)}
+    .grid{display:grid;gap:1.25rem;padding:1rem;max-width:1200px;margin:0 auto 3rem;grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .card-header{padding:1rem;border-bottom:1px solid rgba(255,255,255,.06);color:var(--text)}
+    .card-header h2{margin:0 0 .25rem;font-size:1.05rem}
+    .card-header .meta{color:var(--muted);font-size:.9rem}
+    .frame-wrap{aspect-ratio:16/9;background:#0b1020;border-bottom:1px solid rgba(255,255,255,.06)}
+    iframe{width:100%;height:100%;border:0}
+    .card-body{padding:1rem;color:var(--text)}
+    .btns{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.25rem}
+    .btn{appearance:none;border:1px solid rgba(255,255,255,.12);background:transparent;color:var(--text);padding:.6rem .9rem;border-radius:10px;cursor:pointer;text-decoration:none;font-weight:600}
+    .btn.primary{background:var(--accent);color:#052e16;border-color:transparent}
+    .container{max-width:1000px;margin:0 auto;padding:0 1rem}
+    section.doc{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:16px;color:var(--text);padding:1.2rem;margin:0 auto 1rem}
+    section.doc h2{margin:.2rem 0 0.6rem;font-size:1.15rem}
+    section.doc p, section.doc li{color:var(--text);line-height:1.6}
+    section.doc code{background:rgba(255,255,255,.08);padding:.15rem .35rem;border-radius:6px}
+    footer{color:var(--muted);text-align:center;padding:1.5rem}
+    .note{font-size:.9rem;color:var(--muted);text-align:center;margin:0 1rem 1.25rem}
+    @media (prefers-color-scheme: light){
+      :root{--bg:#f8fafc;--card:#ffffff;--text:#0f172a;--muted:#475569}
+      body{background:#f1f5f9}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Incidentes de Ciberseguridad · 2019–2024</h1>
+    <p class="lead">Visualizaciones interactivas publicadas con GitHub Pages – Maestría en Ciberseguridad (Grupo 11).</p>
+    <nav>
+      <a href="#galeria">Galería</a>
+      <a href="#datos">Datos y Metodología</a>
+      <a href="#repro">Reproducibilidad</a>
+    </nav>
+  </header>
+
+  <p class="note">Si no ves las previsualizaciones, verifica que los archivos HTML existan en la misma carpeta que este <code>index.html</code>.<br/>También puedes abrirlos con el botón <strong>Abrir en pestaña nueva</strong>.</p>
+
+  <!-- ======= GALERIA ======= -->
+  <section id="galeria" class="grid">
+    <!-- Card 1: Animación Quejas vs Pérdidas -->
+    <article class="card">
+      <div class="card-header">
+        <h2>Quejas vs Pérdidas (2019–2024) – Animación</h2>
+        <div class="meta">Tamaño variable por pérdidas anuales</div>
+      </div>
+      <div class="frame-wrap">
+        <iframe src="./interactive_bubble_year_losses.html" title="Quejas vs Pérdidas (2019–2024)"></iframe>
+      </div>
+      <div class="card-body">
+        <p>Explora la relación entre quejas reportadas y pérdidas económicas por año. Usa los controles de reproducción para ver la evolución.</p>
+        <div class="btns">
+          <a class="btn primary" href="./interactive_bubble_year_losses.html" target="_blank" rel="noopener noreferrer">Abrir en pestaña nueva</a>
+          <a class="btn" href="https://github.com/anmerinoto/Tramiento_Datos_Incidentes_Ciberseguridad/blob/main/interactive_bubble_year_losses.html" target="_blank" rel="noopener noreferrer">Ver código HTML en GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 2: Bubble Chart Año vs Pérdidas -->
+    <article class="card">
+      <div class="card-header">
+        <h2>Bubble Chart: Año vs Pérdidas</h2>
+        <div class="meta">Tamaño = Quejas · Color = País</div>
+      </div>
+      <div class="frame-wrap">
+        <iframe src="./interactive_scatter_complaints_losses.html" title="Bubble Chart Año vs Pérdidas"></iframe>
+      </div>
+      <div class="card-body">
+        <p>Visualización por país con tamaño de burbuja proporcional a quejas y color por país.</p>
+        <div class="btns">
+          <a class="btn primary" href="./interactive_scatter_complaints_losses.html" target="_blank" rel="noopener noreferrer">Abrir en pestaña nueva</a>
+          <a class="btn" href="https://github.com/anmerinoto/Tramiento_Datos_Incidentes_Ciberseguridad/blob/main/interactive_scatter_complaints_losses.html" target="_blank" rel="noopener noreferrer">Ver código HTML en GitHub</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <div class="container">
+    <!-- ======= DATOS Y METODOLOGIA ======= -->
+    <section id="datos" class="doc">
+      <h2>📚 Datos y Metodología</h2>
+      <p><strong>Fuente de datos:</strong> archivo <code>data/LossFromNetCrime.csv</code> con indicadores de <em>Quejas</em> y <em>Pérdidas</em> por <em>País</em> y <em>Año</em> (2019–2024).</p>
+      <ul>
+        <li><strong>Variables:</strong> <code>Country</code>, <code>YYYY_Complaints</code>, <code>YYYY_Losses</code> para cada año.</li>
+        <li><strong>Transformación a formato largo (long):</strong> se genera un DataFrame <code>long_df</code> con columnas: <code>Pais</code>, <code>Año</code>, <code>Quejas</code>, <code>Pérdidas</code>.</li>
+        <li><strong>Limpieza:</strong> conversión de tipos numéricos, manejo de nulos y normalización de nombres de país.</li>
+        <li><strong>Visualización:</strong> 
+          <ul>
+            <li><em>Matplotlib</em> para exploración estática (scatter y bubble chart).</li>
+            <li><em>Plotly</em> para visualizaciones interactivas y exportación a HTML.</li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>Leyendas por país:</strong> para Matplotlib, se usa <code>pd.factorize(Pais)</code> para el color y se fuerzan las etiquetas de la leyenda con los nombres/códigos reales en lugar de índices.</p>
+    </section>
+
+    <!-- ======= REPRODUCIBILIDAD ======= -->
+    <section id="repro" class="doc">
+      <h2>🔁 Reproducibilidad</h2>
+      <p>Pasos mínimos para replicar el análisis del notebook <code>incidentes_ciberseguridad.ipynb</code>:</p>
+      <ol>
+        <li><strong>Clonar y crear entorno:</strong>
+          <pre><code>git clone https://github.com/anmerinoto/Tramiento_Datos_Incidentes_Ciberseguridad.git
+cd Tramiento_Datos_Incidentes_Ciberseguridad
+python -m venv .venv
+.venv\Scripts\activate   # Windows
+# source .venv/bin/activate  # Linux/Mac
+pip install -r requirements.txt</code></pre>
+          <p>Si no tienes <code>requirements.txt</code>, instala al menos: <code>pandas matplotlib plotly jupyter</code>.</p>
+        </li>
+        <li><strong>Ejecutar el notebook:</strong> abre <code>incidentes_ciberseguridad.ipynb</code> en Jupyter o VS Code y ejecuta todas las celdas.</li>
+        <li><strong>Exportar HTML (Plotly):</strong>
+          <pre><code>import plotly.io as pio
+# fig_scatter y fig_bubble deben existir (celdas anteriores)
+pio.write_html(fig_scatter, file="interactive_scatter_complaints_losses.html", include_plotlyjs="cdn")
+pio.write_html(fig_bubble,  file="interactive_bubble_year_losses.html",       include_plotlyjs="cdn")</code></pre>
+          <p>Si obtienes <code>NameError: fig_scatter is not defined</code>, ejecuta antes las celdas donde se crean <code>fig_scatter</code> y <code>fig_bubble</code>.</p>
+        </li>
+        <li><strong>Publicar con GitHub Pages:</strong> en <em>Settings → Pages</em>, selecciona <em>Deploy from a branch</em>, <em>main</em> y carpeta <em>/ (root)</em> (o <em>/docs</em>). Accede luego a:
+          <br><code>https://anmerinoto.github.io/Tramiento_Datos_Incidentes_Ciberseguridad/</code>
+        </li>
+      </ol>
+      <p>Consejo: en README añade enlaces con <code>target="_blank"</code> + <code>rel="noopener noreferrer"</code> para abrir en nueva pestaña.</p>
+    </section>
+  </div>
+
+  <footer>
+    <small>© Grupo 11 – Maestría en Ciberseguridad · <a href="https://github.com/anmerinoto/Tramiento_Datos_Incidentes_Ciberseguridad" target="_blank" rel="noopener noreferrer">Repositorio</a></small>
+  </footer>
+</body>
+</html>

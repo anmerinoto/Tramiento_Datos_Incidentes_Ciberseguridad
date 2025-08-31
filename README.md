@@ -1,4 +1,37 @@
-# 🛡️ Proyecto de Análisis de Incidentes de Ciberseguridad  
+# 📊 Tratamiento de Datos de Incidentes de Ciberseguridad
+*Maestría en Ciberseguridad – Grupo 11*
+## 💡 Equipo de Trabajo
+Integrantes:
+* Jenny Alava
+* Saskia Guerrero
+* Angel Merino
+
+Este repositorio contiene el análisis y visualización de incidentes de ciberseguridad utilizando Python (**Pandas**, **Matplotlib** y **Plotly**). El objetivo es explorar y mostrar la relación entre **quejas** y **pérdidas económicas** a nivel global en el período **2019–2024**.
+
+## 📂 Estructura del Repositorio
+- **`incidentes_ciberseguridad.ipynb`** → Notebook principal con procesamiento, análisis y visualización.
+- **`interactive_bubble_year_losses.html`** → Animación *Quejas vs Pérdidas (2019–2024)*.
+- **`interactive_scatter_complaints_losses.html`** → *Bubble Chart* Año vs Pérdidas (Tamaño = Quejas, Color = País).
+- **`index.html`** → Portafolio público (GitHub Pages) con galería y secciones de Datos/Metodología y Reproducibilidad.
+- **`data/`** → Dataset base `LossFromNetCrime.csv` (columnas tipo `YYYY_Complaints`, `YYYY_Losses` por país).
+- **`README.md`** → Documentación del proyecto.
+- **`requirements.txt`** → Dependencias mínimas para ejecutar el notebook.
+
+## 📝 Flujo del Análisis (`incidentes_ciberseguridad.ipynb`)
+1. **Carga de datos**: importación de `data/LossFromNetCrime.csv`.
+2. **Transformación (long format)**: se genera `long_df` con columnas **Pais, Año, Quejas, Pérdidas**.
+3. **Exploración (Matplotlib)**:
+   - Scatter y bubble chart.
+   - Leyenda con nombres/códigos reales de país usando `pd.factorize(Pais)` + etiquetas manuales (`ax.legend(handles, uniques)`).
+4. **Visualizaciones interactivas (Plotly)**:
+   - *Quejas vs Pérdidas (2019–2024)* con animación temporal.
+   - *Bubble chart* Año vs Pérdidas con tamaño = Quejas, color = País.
+5. **Exportación a HTML**:
+   ```python
+   import plotly.io as pio
+   # Asegúrate de crear primero fig_scatter y fig_bubble
+   pio.write_html(fig_scatter, file="interactive_scatter_complaints_losses.html", include_plotlyjs="cdn")
+   pio.write_html(fig_bubble,  file="interactive_bubble_year_losses.html",       include_plotlyjs="cdn")
 
 ## 📌 Descripción del propósito del dataset  
 El presente proyecto utiliza el dataset **Cybersecurity Incidents Dataset** (disponible en [Kaggle](https://www.kaggle.com/datasets/huzpsb/cybersecurity-incidents-dataset)), el cual recopila información relacionada con incidentes de ciberseguridad registrados en diferentes países.  
@@ -7,29 +40,11 @@ El propósito de este dataset es servir como base para el análisis de tendencia
 
 ---
 
-## 🔧 Limpieza y transformación de los datos  
-Para preparar el dataset se realizaron los siguientes pasos:  
-
-1.  
-2.   
-3.  
-4.  
-
----
-
-## 🔧 Procesamiento de Datos  
-Se aplicaron los siguientes pasos de preparación:
-
-Limpieza inicial
-  Eliminación de registros duplicados.  
-  Verificación de valores nulos (no se encontraron).  
-  Transformación  
-
-Conversión de variables categóricas a formato numérico.  
-  Normalización de variables.  
-  Adaptación
-
-Creación de nuevas features:
+## 📎 Datos y Metodología (resumen)
+- **Fuente:** `data/LossFromNetCrime.csv` con quejas y pérdidas por país y año (2019–2024).
+- **Transformación:** apilado por año para formar `long_df (Pais, Año, Quejas, Pérdidas)`.
+- **Limpieza:** convertir las columnas que deberían ser números (ej. Quejas, Pérdidas) pero que en el dataset vienen como texto (str) porque tienen comas, símbolos de dólar o valores faltantes, tratamiento de nulos, normalización de nombres de país.
+- **Visualización:** Matplotlib (EDA) y Plotly (interactividad).
 
 ---
 
@@ -85,14 +100,6 @@ El análisis permite identificar patrones de riesgo y priorizar medidas de ciber
 - La **distribución de incidentes por tipo** evidencia que la mayor parte se concentra en un número reducido de categorías, lo cual permite priorizar medidas de mitigación en esos ámbitos.  
 - Los datos muestran que la **conciencia en ciberseguridad y las políticas de protección** juegan un papel clave en la reducción de riesgos.  
 - Este análisis puede ser un punto de partida para diseñar **modelos predictivos** que anticipen posibles incidentes en función de patrones históricos.  
-
----
-
-## 💡 Equipo de Trabajo
-Integrantes:
-* Jenny Alava
-* Saskia Guerrero
-* Angel Merino
 
 ---
 

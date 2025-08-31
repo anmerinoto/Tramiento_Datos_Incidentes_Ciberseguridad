@@ -5,6 +5,7 @@ numpy==1.26.4
 # --- Visualización ---
 matplotlib==3.9.2
 seaborn==0.13.2
+plotly==5.15.0
 
 # --- Machine Learning / Modelado ---
 scikit-learn==1.5.2
@@ -19,3 +20,6 @@ gensim==4.3.3
 
 # --- Guardado de modelos y utilidades ---
 joblib==1.4.2
+
+# Optional (export, HTML and CSV helpers)
+python-dateutil
