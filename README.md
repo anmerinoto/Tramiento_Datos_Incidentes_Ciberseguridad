@@ -55,8 +55,23 @@ El análisis permite identificar patrones de riesgo y priorizar medidas de ciber
   - Histogramas → .
   - Boxplots → .
   - 📌 Heatmap de correlación (Seaborn) → .
-    * ![Quejas vs Pérdidas (2019–2024) – animación por año](images/scatter_complaints_losses.png)
-    * ![Bubble Chart: Año vs Pérdidas (size=Quejas, color=Pais)](images/bubble_year_losses.png)
+    - **Quejas vs Pérdidas (2019–2024) por año**
+      >Te permite ver si los países con más quejas también presentan más pérdidas, comparando entre años.  
+      Crea un scatterplot donde:    
+      - Eje X = número de quejas.  
+      - Eje Y = pérdidas económicas (USD).  
+      - Cada color representa un año distinto (2019–2024).  
+      ![Quejas vs Pérdidas (2019–2024)](images/scatter_complaints_losses.png)
+
+    - **Bubble Chart: Año vs Pérdidas (size=Quejas, color=Pais)**
+    >Esto te deja ver qué países tienen más pérdidas en cada año y con cuántas quejas se relaciona.  
+      Crea un gráfico de burbujas donde:  
+      - Eje X = Año.  
+      - Eje Y = Pérdidas (USD).  
+      - Tamaño de la burbuja = número de quejas.  
+      - Color = país.  
+      ![Bubble Chart: Año vs Pérdidas (size=Quejas, color=Pais)](images/bubble_year_losses.png)
+
   - Gráfico de barras → .
 
 ---
