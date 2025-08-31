@@ -90,7 +90,7 @@ El análisis permite identificar patrones de riesgo y priorizar medidas de ciber
 
 ### 📌Graficos Animados
 * Para visualizar los graficos animados ejecutar el siguiente link:
-  * <a href="https://rawcdn.githack.com/anmerinoto/Tramiento_Datos_Incidentes_Ciberseguridad/f0bf0d902a3a00ee38eaaf580bc5aa7052fa71a7/index.html" target="_blank">Ejecutame</a>
+  * <a href="https://anmerinoto.github.io/Tramiento_Datos_Incidentes_Ciberseguridad/" target="_blank">Ejecutame</a>
 
 ### Gráfico de barras → .
 
