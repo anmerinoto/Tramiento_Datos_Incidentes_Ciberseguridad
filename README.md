@@ -54,9 +54,10 @@ El análisis permite identificar patrones de riesgo y priorizar medidas de ciber
 ![Evolución de Pérdidas por País](images/grafico_lineas_pais.png)
   - Histogramas → .
   - Boxplots → .
-  - 📌 Heatmap de correlación (Seaborn) → .
-    - **Quejas vs Pérdidas (2019–2024) por año**
-      >Te permite ver si los países con más quejas también presentan más pérdidas, comparando entre años.  
+
+- **📌 Heatmap de correlación (Seaborn)**.
+- **Quejas vs Pérdidas (2019–2024) por año**
+      >Te permite ver si los países con más quejas también presentan más pérdidas, comparando entre años.
       Crea un scatterplot donde:    
       - Eje X = número de quejas.  
       - Eje Y = pérdidas económicas (USD).  
