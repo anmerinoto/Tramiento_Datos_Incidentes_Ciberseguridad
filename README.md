@@ -54,9 +54,10 @@ El análisis permite identificar patrones de riesgo y priorizar medidas de ciber
 ![Evolución de Pérdidas por País](images/grafico_lineas_pais.png)
   - Histogramas → .
   - Boxplots → .
-  - Heatmap de correlación (Seaborn) → .
+  - 📌 Heatmap de correlación (Seaborn) → .
+    * [Quejas vs Pérdidas (2019–2024) – animación por año](images/interactive_scatter_complaints_losses.png)
+    * [Bubble Chart: Año vs Pérdidas (size=Quejas, color=Pais)](images/interactive_bubble_year_losses.png)
   - Gráfico de barras → .
-📌 Ejemplo de hallazgo gráfico:
 
 ---
 
