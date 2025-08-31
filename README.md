@@ -1,5 +1,5 @@
 # 📊 Tratamiento de Datos de Incidentes de Ciberseguridad
-*Maestría en Ciberseguridad – Grupo 11*
+*Maestría en Ciberseguridad – Grupo 11*  
 Este repositorio contiene el análisis y visualización de incidentes de ciberseguridad utilizando Python (**Pandas**, **Matplotlib** y **Plotly**). El objetivo es explorar y mostrar la relación entre **quejas** y **pérdidas económicas** a nivel global en el período **2019–2024**.
 
 ## 💡 Equipo de Trabajo
