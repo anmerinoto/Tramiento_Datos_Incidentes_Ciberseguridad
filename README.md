@@ -1,7 +1,7 @@
 # 🛡️ Proyecto de Análisis de Incidentes de Ciberseguridad  
 
 ## 📌 Descripción del propósito del dataset  
-El presente proyecto utiliza el dataset **Cybersecurity Incidents Dataset** (disponible en [Kaggle](https://www.kaggle.com/datasets/huzpsb/cybersecurity-incidents-dataset)), el cual recopila información relacionada con incidentes de ciberseguridad registrados en diferentes organizaciones.  
+El presente proyecto utiliza el dataset **Cybersecurity Incidents Dataset** (disponible en [Kaggle](https://www.kaggle.com/datasets/huzpsb/cybersecurity-incidents-dataset)), el cual recopila información relacionada con incidentes de ciberseguridad registrados en diferentes países.  
 
 El propósito de este dataset es servir como base para el análisis de tendencias, patrones y posibles vulnerabilidades en el ámbito de la ciberseguridad. Su estudio permite comprender con mayor detalle los tipos de incidentes más frecuentes, los sectores más afectados y la evolución de estas amenazas.  
 
@@ -34,7 +34,7 @@ Creación de nuevas features:
 ---
 
 ## 📊 Principales hallazgos del análisis  
-- Se identificaron los **tipos de incidentes de ciberseguridad más recurrentes**, tales como accesos no autorizados, fugas de datos y ataques de ransomware.  
+- Se identificaron los países con **mayores pérdidas económicas** derivadas de incidentes de ciberseguridad, siendo Estados Unidos, India y China los que presentan una tendencia ascendente más pronunciada en los últimos años. El gráfico de líneas  evidencia cómo en estos países las pérdidas en dólares estadounidenses (USD) han crecido de manera sostenida, reflejando tanto el incremento en la frecuencia de incidentes como en la magnitud del impacto financiero.  
 - Algunos **sectores presentan mayor vulnerabilidad** frente a ataques específicos, lo que sugiere la necesidad de medidas preventivas particulares.  
 - Se observan **tendencias temporales**, con incrementos notables de ciertos incidentes en periodos concretos.  
 
@@ -42,11 +42,22 @@ Creación de nuevas features:
 
 ## 📊 Visualizaciones
 Se generaron las siguientes visualizaciones:
+##  - Gráfico de líneas  
+### Evolución de Pérdidas por País
+El siguiente gráfico muestra la **evolución de las pérdidas económicas (USD) asociadas a incidentes de ciberseguridad por país** durante el periodo 2019–2024.  
+
+Se observa que países como **Estados Unidos, India y China** presentan un crecimiento acelerado en el monto de pérdidas, lo que indica un aumento tanto en la **frecuencia** como en la **severidad de los ataques** en estas regiones.  
+Este comportamiento refleja la concentración de ciberataques en economías altamente digitalizadas, donde la superficie de exposición es mayor y el impacto financiero de los incidentes es significativo.  
+
+El análisis permite identificar patrones de riesgo y priorizar medidas de ciberseguridad a nivel internacional.  
+
+![Evolución de Pérdidas por País](images/grafico_lineas_pais.png)
   - Histogramas → .
   - Boxplots → .
-  - Heatmap de correlación (Seaborn) → .
+  - 📌 Heatmap de correlación (Seaborn) → .
+    * ![Quejas vs Pérdidas (2019–2024) – animación por año](images/scatter_complaints_losses.png)
+    * ![Bubble Chart: Año vs Pérdidas (size=Quejas, color=Pais)](images/bubble_year_losses.png)
   - Gráfico de barras → .
-📌 Ejemplo de hallazgo gráfico:
 
 ---
 
@@ -60,14 +71,14 @@ Se generaron las siguientes visualizaciones:
 ## 💡 Equipo de Trabajo
 Integrantes:
 * Jenny Alava
-* Saskya Guerrero
+* Saskia Guerrero
 * Angel Merino
 
 ---
 
 ## 💡 Repositorio
 Este repositorio contiene:
-- data/ → dataset original (o enlace a Kaggle).
-- notebooks/ → análisis exploratorio y visualizaciones.
-- src/ → scripts de limpieza y preprocesamiento.
+- data/ → dataset original.
+- images/ → visualizaciones.
+- root → análisis exploratorio, notebook y procesamiento.
 - README.md → documentación del proyecto.
