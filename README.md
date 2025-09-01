@@ -90,7 +90,9 @@ El análisis permite identificar patrones de riesgo y priorizar medidas de ciber
 
 ### 📌Graficos Animados
 * Para visualizar los graficos animados ejecutar el siguiente link:
-    * [**Ejecutame**](https://anmerinoto.github.io/Tramiento_Datos_Incidentes_Ciberseguridad)
+    * [**Incidentes de Ciberseguridad · 2019–2024**](https://anmerinoto.github.io/Tramiento_Datos_Incidentes_Ciberseguridad)
+![Incidentes de Ciberseguridad · 2019–2024](images/html_graficos_dinamicos.png)
+
 
 ### Gráfico de barras → .
 
@@ -99,4 +101,4 @@ El análisis permite identificar patrones de riesgo y priorizar medidas de ciber
 ## 💡 Insights y conclusiones  
 - La **distribución de incidentes por tipo** evidencia que la mayor parte se concentra en un número reducido de categorías, lo cual permite priorizar medidas de mitigación en esos ámbitos.  
 - Los datos muestran que la **conciencia en ciberseguridad y las políticas de protección** juegan un papel clave en la reducción de riesgos.  
-- Este análisis puede ser un punto de partida para diseñar **modelos predictivos** que anticipen posibles incidentes en función de patrones históricos.  
+- Este análisis puede ser un punto de partida para diseñar **modelos predictivos** que bubble_year_losses.pnganticipen posibles incidentes en función de patrones históricos.  
